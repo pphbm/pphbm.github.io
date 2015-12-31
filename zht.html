@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>漢語古籍語音計劃(PCPP)</title>
+  <link rel="stylesheet" type="text/css" href="./jquery.fullPage.min.css" />
+  <link rel="stylesheet" type="text/css" href="./pphbm.css" />
+
+  <!--[if IE]>
+    <script type="text/javascript">
+       var console = { log: function() {} };
+    </script>
+  <![endif]-->
+
+
+  <script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://cdn.staticfile.org/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src="./jquery.fullPage.min.js"></script>
+  <script type="text/javascript" src="./pphbm.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        sectionsColor: ['#fff'],
+        anchors: ['home', 'about', 'our_work', 'database', 'timeline', 'join_us'],
+        menu: '#menu',
+        loopTop: true,
+        loopBottom: true
+      });
+    });
+  </script>
+
+</head>
+<body>
+
+
+<ul id="menu">
+  <li data-menuanchor="home" class="active"><a href="#home">幫滂並明</a></li>
+  <li data-menuanchor="about"><a href="#about">關於這個項目</a></li>
+  <li data-menuanchor="our_work"><a href="#our_work">我們要做的</a></li>
+  <li data-menuanchor="database"><a href="#database">我們所接觸的</a></li>
+  <li data-menuanchor="timeline"><a href="#timeline">時間表</a></li>
+  <li data-menuanchor="join_us"><a href="#join_us">我們需要你</a></li>
+  <li> <a href="./index.html">简体</a></li>
+</ul>
+
+<div id="fullpage">
+  <div class="section center" id="section0">
+    <img id="logo" src="./code_t.png" alt="logo" />
+  </div>
+  <div class="section" id="section1">
+      <h1>漢語古籍語音計劃(PCPP)</h1>
+      <p>a.k.a. 幫滂並明計劃 / Project PPhBM </p>
+      <p></p>
+      <h4 style="margin-top: 3vh">本項目由</h4>
+      <p>Jiacheng ZHANG<a href="https://twitter.com/oranzhang">(@oranzhang)</a></p>
+      <h4>與</h4>
+      <p>Mingye WANG<a href="https://twitter.com/arthur2e5">(@arthur2e5)</a></p>
+      <h4>發起.</h4>
+  </div>
+  <div class="section" id="section2">
+    <h1 style="margin-bottom: 4vh">我們</h1>
+    <ul>
+      <li>從可靠的資訊來源抓取已經電子化整理的古籍, 獲取未整理的古籍(及掃描件)並將其進行電子化整理並存儲進資料庫;</li>
+      <li>將已經電子化整理的古籍以年代為時間單位分類;</li>
+      <li>將我們所存檔的電子化古籍注以音韻資訊, 包括但不限於韻書次目, 常見反切註音, 各時期發音的拉丁化註音, 各家構擬的各時期發音的國際音標 (IPA);</li>
+      <li>將存檔的資料格式化並在網際網路上提供查詢/顯示頁面.</li>
+    </ul>
+  </div>
+  <div class="section" id="section3">
+    <h1>我們將處理, 整理並儲存:</h1>
+    <ul>
+      <li>古籍原文 [古字形, 現代正體(臺灣), 現代簡體(大陸)]</li>
+      <li>韻書資料</li>
+      <li>志願者提供的構擬發音錄音</li>
+      <li>其他可能有關資料</li>
+    </ul>
+    <h4>以及</h4>
+    <ul>
+      <li>1911 年之前的漢語文字資料</li>
+      <li>可以反映 1949 年之前漢語語音的非漢語資料</li>
+      <li>可以反映 1911 年之前的漢語語音的開放版權的音訊/視訊資料</li>
+    </ul>
+  </div>
+  <div class="section" id="section4">
+    <h1>接下來做需要做的以及我們正在做的</h1>
+    <ul>
+      <li>完成 <i>詩</i> 的錄入, Feb 20, 2016;</li>
+      <li>完成 <i>廣韻</i> 的匯入, Jan 15, 2016;</li>
+      <li>完成 <i>上古音韻</i> 的匯入, Feb 1, 2016;</li>
+      <li>網站首頁上線, Jan 15, 2016;</li>
+      <li>韻書查詢系統上線, Feb 15, 2016;</li>
+      <li>文字資料查詢系統上線, Mar 15, 2016.</li>
+    </ul>
+    <h4 style="margin-top: 3vh">上述日期為預計完成時間. </h4>
+    <h4>下一階段任務將於上述任務完成後公佈. </h4>
+  </div>
+  <div class="section" id="section5">
+    <p>新年好.</p>
+    <p>這個項目由一群想要獲取更有趣的 IPA 音節的腦洞少組成.這群少年處理古籍並標上由各音韻學家構擬的古漢語發音之國際音標.</p>
+    <ul style="color: #000;">
+      <li>幫滂並明的資料由你這樣的志願者維護.</li>
+      <li>大部分漢字在韻書中只有一個讀音, 我們的計算機自動化程式將會自動填上, 這些自動化生成的文字需要進行<i>人工校對</i>.</li>
+      <li>剩下的多音字之小韻就需要你按照漢字意義和上下文進行<i>選擇</i>.</li>
+      <li>同時, 我們需要大量的自由版權的錄音, 你也可以<i>錄製某段選定文字的構擬讀音並上傳</i>.</li>
+    <ul>
+    <h4>如果你有興趣並想要幫助我們補全這個資料庫, 請聯絡我們: </h4>
+    <pre>
+      Twitter: @oranzhang, @arthur2e5
+      Weibo: @奥软奥软, @Arthur2e5-已挂起
+      Email: orancho#outlook.com, arthur2e5@aosc.io
+    </pre>
+    <h4>所有完成處理的資料將在 <a href="https://github.com/pphbm" target="_blank">Github</a> 公開.</h4>
+  </div>
+</div>
+
+</body>
+</html>
