@@ -194,4 +194,7 @@ body{
 	color: #111111;
 	font-size: 70%;
 }
+pre {
+	overflow-wrap: break-word;
+}
 
