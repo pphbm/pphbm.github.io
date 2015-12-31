@@ -10,7 +10,7 @@ ul li{
 	margin: 1rem;
 }
 a{
-	color: #111111;
+	color: #111111
 	text-decoration: underline;
 }
 table {
@@ -62,6 +62,8 @@ body{
 
 .section{
 	padding: 0 10vw;
+	border-bottom: rgb(206, 206, 206) 1px solid;
+	min-height: 100vh
 }
 .center{
 	text-align: center;
